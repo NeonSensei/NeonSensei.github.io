@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NeonSensei's Portfolio</title>
+    <style>
+     
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background: linear-gradient(to bottom, #000000, #222222);
+        color: #fff;
+      }
+
+      
+      header {
+        padding: 50px;
+        text-align: center;
+      }
+
+      
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+      }
+
+     
+      h1, h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      }
+
+      p {
+        line-height: 1.5;
+        text-align: justify;
+      }
+
+     
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #222222;
+      }
+
+     
+      footer p {
+        margin: 0;
+        font-size: 14px;
+      }
+
+     
+      .invite-button {
+        display: block;
+        margin: 0 auto;
+        background-color: rgba(76, 175, 80, 0.7);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+        position: relative; 
+        transition: all 0.3s ease-out; 
+      }
+
+      .invite-button:hover {
+        background-color: rgba(62, 142, 65, 0.9); 
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+      }
+
+      .invite-button:before { 
+        content: attr(data-text);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .skillset {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 65px;
+      }
+      .skillset img {
+        width: 50%;
+        height: auto;
+        margin-right: 25px;
+        border-radius: 0%;
+      }
+      .skillset p {
+        margin: 0;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NeonSensei's Portfolio</h1>
+    </header> 
+
+    <section>
+      <h2>About Me</h2>
+      <p>Hi there! My name is NeonSensei and I'm a 15-year-old developer who loves to workout and work on interesting projects in my free time. I have 1 year of experience in Luau and Python, and 3-4 months of experience in JavaScript, HTML, and CSS.</p>
+    </section>
+
+    <section>
+      <h2>Skillset</h2>
+      <pg>The following are images of some of the things I can create, this isn't all of my skills, just the few I wanted seen.</pg>
+      <div class="skillset">
+        
+        <div style="display: flex; justify-content: center;">
+          <div style="margin: 93px;">
+            <img src="https://cdn.discordapp.com/attachments/1069344333666467914/1078583644282691605/image.png" alt="Python">
+            <p>Slash Commands</p>
+          </div>
+          <div style="margin: 20px;">
+            <img src="https://cdn.discordapp.com/attachments/1069344333666467914/1078586886928470046/image.png" alt="Luau">
+            <p>Modal Interactions</p>
+          </div>
+          
+          </div>
+        </div>
+      </section>    
+      
+      <section>
+        <h2>Clients</h2>
+        <p>I've made a bot for a development server called Supernatural. The bot is a simple moderation / welcome message bot as requested.</p>
+        <a class="invite-button" href="https://discord.gg/GnkQnNTGJG" data-text="Supernatural Discord"> </a>
+      </section>
+  
+      <footer>
+        <p>&copy; 2023 NeonSensei#9137</p>
+      </footer>
+    </body>
+  </html>        
